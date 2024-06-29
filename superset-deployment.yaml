@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superset
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: superset
+  template:
+    metadata:
+      labels:
+        app: superset
+    spec:
+      containers:
+      - name: superset
+        image: apache/superset:latest
+        ports:
+        - containerPort: 8088
+        volumeMounts:
+        - name: superset-config
+          mountPath: /etc/superset
+        env:
+        - name: SUPERSET_CONFIG_PATH
+          value: /etc/superset/superset_config.py
+      volumes:
+      - name: superset-config
+        configMap:
+          name: superset-config
