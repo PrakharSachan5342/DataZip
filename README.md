@@ -1,5 +1,7 @@
 <h1>🚀 DevOps - Kubernetes Deployment of Clickhouse & Superset</h1>
 
+![](https://as1.ftcdn.net/v2/jpg/05/12/04/52/1000_F_512045284_gsbCu75oyqHo59MccBltJe0sJRck1PPa.jpg)
+
 <h2>📄 Overview</h2>
 <p>This repository contains the Kubernetes configuration files for deploying Clickhouse and Apache Superset on Minikube. The objective of this assignment is to set up a stateful Clickhouse deployment with persistent storage and deploy Superset, a business intelligence tool, to create reports and charts based on data from Clickhouse.</p>
 
