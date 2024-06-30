@@ -4,4 +4,9 @@ metadata:
   name: superset-config
 data:
   superset_config.py: |
+    SECRET_KEY = "ETdX(/gn#Un2fFgfi,}HP([Bp05^,xO2llEPF:/7@s"
+
+    # Example configuration for SQLite
     SQLALCHEMY_DATABASE_URI = 'sqlite:////var/lib/superset/superset.db'
+
+    # Additional configurations can be added here
